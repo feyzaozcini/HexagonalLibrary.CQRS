@@ -13,7 +13,7 @@ builder.Services.AddDbContextService();
 builder.Services.AddUseCaseService();
 builder.Services.AddDtoMapperService();
 
-builder.Services.AddControllers().AddApplicationPart(typeof(CategoryController).Assembly); //burası cok önemli.Cünkü Controller'larin bulundugu assembly'i tanıtıyoruz ki API cagrılarında Controller'lar nerede bulunabilsin...Burada Asp .Net Core'a sunu demiş oluyoruz : "HexagonalSample.WebApi icindeki Controllerları da kullan"
+builder.Services.AddControllers().AddApplicationPart(typeof(CategoryController).Assembly); 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
